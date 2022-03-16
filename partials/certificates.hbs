@@ -8,7 +8,13 @@
 		{{#each resume.certificates}}
 		<div class='blockHeader'>
 			<span class='title'>
+                {{#if url}}
+                    <a href='{{url}}' target="_blank">
+                {{/if}}
 				{{#if name}}{{name}}{{/if}}
+                {{#if url}}
+                    </a>
+                {{/if}}
 			</span>
 			{{#if issuer}} | <span class="issuer">{{issuer}}</span>{{/if}}
 			{{#if date}}
@@ -17,11 +23,6 @@
 			</span>
 			{{/if}}
 		</div>
-		{{#if url}}
-		<div class='url'>
-			<a href='{{url}}'>{{url}}</a>
-		</div>
-		{{/if}}
 		{{#if summary}}
 		<div class="summary">
 			<p>{{summary}}</p>

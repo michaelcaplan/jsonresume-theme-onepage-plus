@@ -12,6 +12,10 @@
 		{{#if email}}
 		<span class='email'>{{email}}</span>
 		{{/if}}
+		{{#if url}}
+            <span class='divider'>|</span>
+            <span class='url'><a href="{{url}}" target="_blank">{{url}}</a></span>
+        {{/if}}
 		{{#if phone}}
 		<span class='divider'>|</span>
 		<span class='phone'>{{phone}}</span>

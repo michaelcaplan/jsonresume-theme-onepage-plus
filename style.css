@@ -1,6 +1,6 @@
 body {
     background: #EEEEEE;
-    font: 13px "Times New Roman", Times, sans-serif;
+    font: 14px 'Quattrocento Sans', sans-serif;
     line-height: 1.4;
     margin: 40px 0;
 }
@@ -23,6 +23,7 @@ li {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #resume {
@@ -43,6 +44,7 @@ a {
 
 .largeFont {
     font-size: 20px;
+    font-family: 'Quattrocento', 'Times', serif;
 }
 
 .smallFont {
@@ -58,6 +60,7 @@ a {
     width: 18%;
     vertical-align: top;
     display: inline-block;
+    font-family: 'Quattrocento', serif;
 }
 
 .sectionContent {
@@ -81,7 +84,7 @@ a {
 }
 
 .sectionContent .separator {
-    height: 14px;
+    height: 0px;
 }
 
 .sectionLine {
@@ -99,10 +102,10 @@ a {
 }
 
 .summary {
-    margin-top: 6px;
+    margin-top: -0.75em;
 }
 
-.skillBlock {
+.skillBlock, #certificates .blockHeader {
     margin-bottom: 4px;
 }
 
@@ -119,6 +122,9 @@ blockquote.reference {
     margin-bottom: 1em;
 }
 
+#nameBlock .name {
+    font-weight: bold;
+}
 
 /* Media Queries */
 

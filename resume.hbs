@@ -2,30 +2,35 @@
 <html>
 	<head>
 	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
 
-	<style>
-	{{{css}}}
-	</style>
-	
+        <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+
+        <style>
+        {{{css}}}
+        </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+
 	</head>
 	<body>
 	
-	<div id="resume">
-		{{> basics }}
-		{{> education }}
-		{{> skills }}
-		{{> work }}
-		{{> publications }}
-		{{> projects}}
-		{{> certificates }}
-		{{> awards }}
-		{{> volunteer }}
-		{{> languages }}
-		{{> interests }}
-		{{> references }}
+        <div id="resume">
+            {{> basics }}
+            {{> work }}
+            {{> skills }}
+            {{> education }}
+            {{> publications }}
+            {{> projects}}
+            {{> certificates }}
+            {{> awards }}
+            {{> volunteer }}
+            {{> languages }}
+            {{> interests }}
+            {{> references }}
+        </div>
 	</body>
 </html>
