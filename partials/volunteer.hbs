@@ -2,19 +2,20 @@
 <div class='sectionLine'></div>
 <div id='volunteer' class="sectionBlock">
 	<div class='sectionName'>
-		<span>VOLUNTEERING</span>
+		<span>VOLUNTEER</span>
 	</div>
 	<div class='sectionContent'>
 		{{#each resume.volunteer}}
 		<div class='blockHeader'>
-			<span class='title'>{{#if position}}{{position}}{{/if}}</span>{{#if organization}} | {{organization}}{{/if}}
+			<span class='title'>
+                {{#if url}}
+                    <a href="{{url}}">{{#if position}}{{position}}{{/if}}</a>
+                {{/if}}
+            </span>{{#if organization}} | {{organization}}{{/if}}
 			{{#if startDate}}
 			<span class='date'>
 				{{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
 			</span>
-			{{/if}}
-			{{#if url}}
-			<div class='url'><a href='{{url}}'>{{url}}</a></div>
 			{{/if}}
 			{{#if summary}}
 			<div class="summary">

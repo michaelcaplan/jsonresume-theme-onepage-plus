@@ -2,12 +2,17 @@ var fs = require("fs");
 var path = require('path');
 var Handlebars = require("handlebars");
 
-// Handlebars.registerHelper('formatDate', dateString =>
-//     new Date(dateString).toLocaleDateString('en', {
-//         month: 'short',
-//         year: 'numeric',
-//     }),
-// );
+Handlebars.registerHelper('spicyness', level => {
+    switch (level.toLowerCase()) {
+        case 'advanced' :
+            return '&#x1F336;&#x1F336;&#x1F336;';
+        case 'intermediate' :
+            return '&#x1F336;&#x1F336;';
+        case 'beginner' :
+        default :
+            return '&#x1F336;';
+    }
+});
 
 Handlebars.registerHelper('formatDate', function(dateString) {
     let dateStrArr = dateString.split('-');

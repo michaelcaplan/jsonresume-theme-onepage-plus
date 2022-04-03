@@ -73,10 +73,16 @@ a {
     padding-left: 20px;
     margin-top: 6px;
     list-style-type: circle;
+    margin-bottom: 12px;
 }
 
 .sectionContent .title {
     font-weight: bold;
+}
+
+.sectionContent .level {
+    font-weight: normal;
+    filter: saturate(0);
 }
 
 .sectionContent .date {
