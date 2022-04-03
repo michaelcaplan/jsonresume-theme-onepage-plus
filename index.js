@@ -5,12 +5,12 @@ var Handlebars = require("handlebars");
 Handlebars.registerHelper('spicyness', level => {
     switch (level.toLowerCase()) {
         case 'advanced' :
-            return '&#x1F336;&#x1F336;&#x1F336;';
+            return '&#x1F44D;&#x1F44D;&#x1F44D;';
         case 'intermediate' :
-            return '&#x1F336;&#x1F336;';
+            return '&#x1F44D;&#x1F44D;';
         case 'beginner' :
         default :
-            return '&#x1F336;';
+            return '&#x1F44D;';
     }
 });
 
