@@ -20,7 +20,7 @@
                         {{#if position}} | <span class="position">{{position}}</span>{{/if}}
                         {{#if startDate}}
                         <span class='date'>
-					        {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+					        {{#if startDate}}{{yearMonth startDate}}{{/if}} &mdash; {{#if endDate}}{{yearMonth endDate}}{{else}}Present{{/if}}
 				        </span>
                         {{/if}}
                     </div>

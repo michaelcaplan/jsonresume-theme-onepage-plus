@@ -31,7 +31,20 @@ Handlebars.registerHelper('formatDate', function(dateString) {
         });
 
     return dateStrArr;
-})
+});
+
+
+Handlebars.registerHelper('yearMonth', function(dateString) {
+    let dateStrArr = dateString.split('-');
+
+    if (dateStrArr[0] && dateStrArr[1])
+        return new Date(dateString).toLocaleDateString('en', {
+            month: 'short',
+            year: 'numeric',
+        });
+
+    return dateStrArr;
+});
 
 function render(resume) {
     var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
